@@ -45,6 +45,8 @@ python src/run_audit.py      # génère les données, lance les contrôles, écr
 python -m pytest -q          # 5 tests
 ```
 
+👉 **[Voir le rapport d’audit en ligne](https://merveillekamdem.github.io/audit-data-analytics/results/rapport_audit.html)**
+
 Sorties : `results/rapport_audit.html`, `results/anomalies.xlsx` (un onglet par contrôle), `results/anomalies.csv`, `results/synthese.csv`.
 
 ## Structure
