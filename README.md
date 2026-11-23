@@ -1,5 +1,7 @@
 # 🔎 Audit Data Analytics – tests d'audit automatisés en Python
 
+[![Tests](https://github.com/MERVEILLEKAMDEM/audit-data-analytics/actions/workflows/tests.yml/badge.svg)](https://github.com/MERVEILLEKAMDEM/audit-data-analytics/actions)
+
 **Contrôler 100 % des opérations au lieu d'un échantillon.** Ce projet programme en Python (pandas) les tests qu'une direction de l'Audit applique aux données d'un assureur vie : doublons, montants atypiques, incohérences de dates, contrôle « 4 yeux », séparation des tâches et loi de Benford. Il produit ensuite un rapport HTML et un fichier Excel des anomalies.
 
 > Les données sont **100 % fictives**, générées par `src/generate_data.py`. Des anomalies y sont injectées volontairement, et les tests unitaires vérifient que chaque contrôle les retrouve toutes.
