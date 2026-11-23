@@ -45,3 +45,14 @@ def test_primes_atypiques_rappel(donnees):
 def test_benford_theorique():
     bf = at.benford(pd.Series([10 ** (i / 1000) for i in range(1, 6000)]))
     assert bf.attrs["mad"] < 0.006
+
+
+def test_isolation_forest_precis(donnees):
+    """Sans règle écrite, les paiements signalés doivent être de vraies anomalies injectées."""
+    inj, c, s, p = donnees
+    ml = at.anomalies_ml(p, s, c)
+    sur = set(at.paiement_superieur_demande(p, s)["id_paiement"])
+    avant = set(at.sinistres_avant_effet(s, c)["id_sinistre"])
+    connues = sur | set(p[p["id_sinistre"].isin(avant)]["id_paiement"])
+    assert len(ml) > 0
+    assert len(set(ml["id_paiement"]) & connues) / len(ml) >= 0.8

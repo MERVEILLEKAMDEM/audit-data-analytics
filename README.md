@@ -22,6 +22,8 @@
 | Paiement > montant demandé | montant payé supérieur à la demande | 8 |
 | Loi de Benford | 1er chiffre des paiements, seuils de Nigrini | MAD = 0,0082 (conformité acceptable) |
 
+| **Détection ML (Isolation Forest)** | **sans règle écrite** : montant, ratios payé/demandé et payé/prime, délais | 15 paiements, **tous de vraies anomalies** (15 des 21 cas de surpaiement ou de date incohérente) |
+
 **1,33 M€** ont été payés sans contrôle « 4 yeux » réel. Les 15 primes gonflées injectées sont toutes détectées, plus 2 valeurs naturellement extrêmes qu'un auditeur vérifierait.
 
 <p float="left">
@@ -54,7 +56,9 @@ src/run_audit.py       campagne d'audit, graphiques, rapport HTML/Excel
 tests/                 vérification du rappel de chaque contrôle
 ```
 
-**Pistes** : ajouter un modèle non supervisé (Isolation Forest) pour les anomalies sans règle connue, et brancher le tout sur une base SQL.
+**Règles + machine learning** : les règles trouvent ce qu'on sait chercher. L'Isolation Forest trouve des profils inhabituels sans qu'on les ait décrits, avec une précision de 100 % sur ce jeu.
+
+**Pistes** : brancher le tout sur une base SQL et planifier la campagne chaque mois.
 
 ---
 Pascale KAMDEM · Data & IA · [LinkedIn](https://www.linkedin.com/in/merveille-kamdem-562aa0284/)

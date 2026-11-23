@@ -4,11 +4,11 @@
 h1{color:#1f4e79}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:6px 12px}
 .kpi{display:inline-block;margin-right:30px;font-size:28px;color:#1f4e79}.kpi small{display:block;font-size:13px;color:#666}</style>
 <h1>Rapport d'audit data – Assurance vie (données fictives)</h1>
-<p>Généré le 23/11/2026 sur 5 012 contrats, 1 800 sinistres et 1 500 paiements.</p>
-<div class="kpi">97<small>anomalies</small></div>
+<p>Généré le 24/11/2026 sur 5 012 contrats, 1 800 sinistres et 1 500 paiements.</p>
+<div class="kpi">112<small>anomalies</small></div>
 <div class="kpi">1 328 168 €<small>payés sans contrôle 4 yeux</small></div>
 <div class="kpi">Conformité acceptable<small>test de Benford</small></div>
-<h2>Synthèse des contrôles</h2><table><tr><th>Contrôle</th><th>Anomalies</th></tr><tr><td>Doublons de contrats</td><td>24</td></tr><tr><td>Primes atypiques</td><td>17</td></tr><tr><td>Sinistres avant date d'effet</td><td>20</td></tr><tr><td>Paiements sans validation</td><td>18</td></tr><tr><td>Séparation des tâches</td><td>10</td></tr><tr><td>Paiement > montant demandé</td><td>8</td></tr></table>
+<h2>Synthèse des contrôles</h2><table><tr><th>Contrôle</th><th>Anomalies</th></tr><tr><td>Doublons de contrats</td><td>24</td></tr><tr><td>Primes atypiques</td><td>17</td></tr><tr><td>Sinistres avant date d'effet</td><td>20</td></tr><tr><td>Paiements sans validation</td><td>18</td></tr><tr><td>Séparation des tâches</td><td>10</td></tr><tr><td>Paiement > montant demandé</td><td>8</td></tr><tr><td>Détection ML (Isolation Forest)</td><td>15</td></tr></table>
 <img src="figures/anomalies_par_controle.png" width="100%">
 <img src="figures/primes_atypiques.png" width="100%">
 <img src="figures/benford.png" width="100%">

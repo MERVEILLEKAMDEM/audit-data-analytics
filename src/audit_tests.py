@@ -67,6 +67,28 @@ def benford(montants: pd.Series) -> pd.DataFrame:
     return out
 
 
+def anomalies_ml(paiements: pd.DataFrame, sinistres: pd.DataFrame, contrats: pd.DataFrame,
+                 part: float = 0.01, graine: int = 0) -> pd.DataFrame:
+    """Détection non supervisée (Isolation Forest) : repère les paiements au profil
+    inhabituel sans règle écrite à l'avance. Complète les contrôles à base de règles."""
+    from sklearn.ensemble import IsolationForest
+
+    df = (paiements.merge(sinistres, on="id_sinistre")
+          .merge(contrats.drop_duplicates("id_contrat")[["id_contrat", "date_effet", "prime_annuelle"]],
+                 on="id_contrat"))
+    X = pd.DataFrame({
+        "log_montant": np.log1p(df["montant_paye"]),
+        "ratio_paye_demande": df["montant_paye"] / df["montant_demande"],
+        "ratio_paye_prime": df["montant_paye"] / df["prime_annuelle"],
+        "delai_paiement_j": (df["date_paiement"] - df["date_declaration"]).dt.days,
+        "anciennete_contrat_j": (df["date_declaration"] - df["date_effet"]).dt.days,
+    })
+    modele = IsolationForest(contamination=part, random_state=graine).fit(X)
+    df["score_anomalie"] = -modele.score_samples(X)
+    res = df[modele.predict(X) == -1].sort_values("score_anomalie", ascending=False)
+    return res.assign(motif="Profil de paiement inhabituel (Isolation Forest)")
+
+
 def lancer_tous(contrats, sinistres, paiements) -> dict:
     return {
         "Doublons de contrats": doublons_contrats(contrats),

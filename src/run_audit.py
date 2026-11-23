@@ -30,6 +30,7 @@ def main():
     contrats, sinistres, paiements = charger()
     resultats = at.lancer_tous(contrats, sinistres, paiements)
     bf = at.benford(paiements["montant_paye"])
+    resultats["Détection ML (Isolation Forest)"] = at.anomalies_ml(paiements, sinistres, contrats)
 
     # --- Export des anomalies -------------------------------------------------
     lignes = []
