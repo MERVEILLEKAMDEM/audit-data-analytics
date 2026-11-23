@@ -63,4 +63,4 @@ tests/                 vérification du rappel de chaque contrôle
 **Pistes** : brancher le tout sur une base SQL et planifier la campagne chaque mois.
 
 ---
-Pascale KAMDEM · Data & IA · [LinkedIn](https://www.linkedin.com/in/merveille-kamdem-562aa0284/)
+Pascale KAMDEM · Data & IA · [LinkedIn](https://www.linkedin.com/in/pascale-merveille-kamdem-562aa0284/)
