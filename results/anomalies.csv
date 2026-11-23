@@ -1,0 +1,98 @@
+identifiant,motif
+C001600,"Contrat en double (même client, produit, date et prime)"
+C900009,"Contrat en double (même client, produit, date et prime)"
+C002468,"Contrat en double (même client, produit, date et prime)"
+C900007,"Contrat en double (même client, produit, date et prime)"
+C001055,"Contrat en double (même client, produit, date et prime)"
+C900003,"Contrat en double (même client, produit, date et prime)"
+C000589,"Contrat en double (même client, produit, date et prime)"
+C900006,"Contrat en double (même client, produit, date et prime)"
+C000705,"Contrat en double (même client, produit, date et prime)"
+C900004,"Contrat en double (même client, produit, date et prime)"
+C000106,"Contrat en double (même client, produit, date et prime)"
+C900005,"Contrat en double (même client, produit, date et prime)"
+C002653,"Contrat en double (même client, produit, date et prime)"
+C900002,"Contrat en double (même client, produit, date et prime)"
+C001501,"Contrat en double (même client, produit, date et prime)"
+C900000,"Contrat en double (même client, produit, date et prime)"
+C000228,"Contrat en double (même client, produit, date et prime)"
+C900011,"Contrat en double (même client, produit, date et prime)"
+C002413,"Contrat en double (même client, produit, date et prime)"
+C900008,"Contrat en double (même client, produit, date et prime)"
+C002464,"Contrat en double (même client, produit, date et prime)"
+C900010,"Contrat en double (même client, produit, date et prime)"
+C002586,"Contrat en double (même client, produit, date et prime)"
+C900001,"Contrat en double (même client, produit, date et prime)"
+C000158,Prime atypique pour ce produit (z robuste > 3.5)
+C000776,Prime atypique pour ce produit (z robuste > 3.5)
+C000930,Prime atypique pour ce produit (z robuste > 3.5)
+C001018,Prime atypique pour ce produit (z robuste > 3.5)
+C001302,Prime atypique pour ce produit (z robuste > 3.5)
+C001365,Prime atypique pour ce produit (z robuste > 3.5)
+C001441,Prime atypique pour ce produit (z robuste > 3.5)
+C002137,Prime atypique pour ce produit (z robuste > 3.5)
+C002633,Prime atypique pour ce produit (z robuste > 3.5)
+C002654,Prime atypique pour ce produit (z robuste > 3.5)
+C002660,Prime atypique pour ce produit (z robuste > 3.5)
+C003308,Prime atypique pour ce produit (z robuste > 3.5)
+C003864,Prime atypique pour ce produit (z robuste > 3.5)
+C003905,Prime atypique pour ce produit (z robuste > 3.5)
+C004170,Prime atypique pour ce produit (z robuste > 3.5)
+C004274,Prime atypique pour ce produit (z robuste > 3.5)
+C004338,Prime atypique pour ce produit (z robuste > 3.5)
+S000040,Sinistre déclaré avant la date d'effet du contrat
+S000179,Sinistre déclaré avant la date d'effet du contrat
+S000324,Sinistre déclaré avant la date d'effet du contrat
+S000445,Sinistre déclaré avant la date d'effet du contrat
+S000657,Sinistre déclaré avant la date d'effet du contrat
+S000665,Sinistre déclaré avant la date d'effet du contrat
+S000749,Sinistre déclaré avant la date d'effet du contrat
+S000821,Sinistre déclaré avant la date d'effet du contrat
+S000901,Sinistre déclaré avant la date d'effet du contrat
+S000988,Sinistre déclaré avant la date d'effet du contrat
+S001069,Sinistre déclaré avant la date d'effet du contrat
+S001176,Sinistre déclaré avant la date d'effet du contrat
+S001188,Sinistre déclaré avant la date d'effet du contrat
+S001363,Sinistre déclaré avant la date d'effet du contrat
+S001390,Sinistre déclaré avant la date d'effet du contrat
+S001408,Sinistre déclaré avant la date d'effet du contrat
+S001455,Sinistre déclaré avant la date d'effet du contrat
+S001717,Sinistre déclaré avant la date d'effet du contrat
+S001757,Sinistre déclaré avant la date d'effet du contrat
+S001777,Sinistre déclaré avant la date d'effet du contrat
+P000048,Paiement émis sans validation
+P000220,Paiement émis sans validation
+P000258,Paiement émis sans validation
+P000273,Paiement émis sans validation
+P000560,Paiement émis sans validation
+P000644,Paiement émis sans validation
+P000710,Paiement émis sans validation
+P000839,Paiement émis sans validation
+P000842,Paiement émis sans validation
+P000961,Paiement émis sans validation
+P001035,Paiement émis sans validation
+P001039,Paiement émis sans validation
+P001096,Paiement émis sans validation
+P001098,Paiement émis sans validation
+P001204,Paiement émis sans validation
+P001343,Paiement émis sans validation
+P001369,Paiement émis sans validation
+P001399,Paiement émis sans validation
+P000292,Même utilisateur a créé et validé le paiement
+P000603,Même utilisateur a créé et validé le paiement
+P000657,Même utilisateur a créé et validé le paiement
+P000669,Même utilisateur a créé et validé le paiement
+P000771,Même utilisateur a créé et validé le paiement
+P000775,Même utilisateur a créé et validé le paiement
+P001040,Même utilisateur a créé et validé le paiement
+P001100,Même utilisateur a créé et validé le paiement
+P001287,Même utilisateur a créé et validé le paiement
+P001467,Même utilisateur a créé et validé le paiement
+P000183,Montant payé supérieur au montant demandé
+P000341,Montant payé supérieur au montant demandé
+P000405,Montant payé supérieur au montant demandé
+P000509,Montant payé supérieur au montant demandé
+P001021,Montant payé supérieur au montant demandé
+P001045,Montant payé supérieur au montant demandé
+P001289,Montant payé supérieur au montant demandé
+P001447,Montant payé supérieur au montant demandé
